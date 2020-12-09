@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/grad1"
+    tools:context=".Registro">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:padding="10dp"
+            android:text="REGISTRARSE"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:fontFamily="@font/adobe_myungjo_std_m"
+            android:textColor="#FFFFFF">
+        </TextView>
+
+
+        <EditText
+            android:id="@+id/edtnombreregidtro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:padding="20dp"
+            android:layout_margin="15dp"
+            android:inputType="textPersonName"
+            android:fontFamily="@font/adobe_myungjo_std_m"
+            android:hint="Nombres" />
+
+        <EditText
+            android:id="@+id/edtapellidoregis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:padding="20dp"
+            android:layout_margin="15dp"
+            android:inputType="textPersonName"
+            android:fontFamily="@font/adobe_myungjo_std_m"
+            android:hint="Apellidos" />
+
+        <EditText
+            android:id="@+id/edtdireccionreg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:padding="20dp"
+            android:layout_margin="15dp"
+            android:inputType="textPersonName"
+            android:fontFamily="@font/adobe_myungjo_std_m"
+            android:hint="Dirección"  />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/edtfechanaciminetoreg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_weight="1"
+                android:padding="20dp"
+                android:layout_margin="15dp"
+                android:inputType="textPersonName"
+                android:fontFamily="@font/adobe_myungjo_std_m"
+                android:hint="Fecha de nacimiento"  />
+
+            <Button
+                android:id="@+id/btnregistrofecha"
+                android:layout_width="232dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:background="@drawable/ic_baseline_today_24" />
+
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/edtnacionalidadreg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:padding="20dp"
+            android:layout_margin="15dp"
+            android:inputType="textPersonName"
+            android:fontFamily="@font/adobe_myungjo_std_m"
+            android:hint="Nacionalidad"  />
+
+        <EditText
+            android:id="@+id/edttelefonoreg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:padding="20dp"
+            android:layout_margin="15dp"
+            android:inputType="textPersonName"
+            android:fontFamily="@font/adobe_myungjo_std_m"
+            android:hint="Teléfono"  />
+
+        <EditText
+            android:id="@+id/edtcorreoregitro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:padding="20dp"
+            android:layout_margin="15dp"
+            android:hint="Correo Electrónico"
+            android:fontFamily="@font/adobe_myungjo_std_m"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/edtpasswordregidtro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Contraseña"
+            android:layout_margin="15dp"
+            android:inputType="textPassword"
+            android:fontFamily="@font/adobe_myungjo_std_m"
+            android:padding="20dp" />
+        <Button
+            android:id="@+id/btnregitro"
+            android:layout_width="147dp"
+            android:layout_height="46dp"
+            android:layout_gravity="center"
+            android:background="@drawable/botnes2"
+            android:text="Entrar"
+            android:textColor="#F7FCF7F7"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+</ScrollView>

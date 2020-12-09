@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="@drawable/grad1"
+    android:layout_weight="100">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/inicioobras"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="15"
+            android:gravity="center"
+            android:text="INICIO"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="25dp"></TextView>
+
+        <LinearLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="15"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/etBuscar"
+                android:layout_weight="9"
+                android:layout_width="wrap_content"
+                android:fontFamily="@font/adobe_myungjo_std_m"
+                android:layout_height="wrap_content"/>
+            <Button
+                android:paddingLeft="20dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:id="@+id/btnBuscar"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="#FFEB3B"
+                android:drawableLeft="@android:drawable/ic_menu_search"
+                android:textSize="10sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp"
+            android:layout_weight="70">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/re"
+                android:layout_height="wrap_content">
+            </androidx.recyclerview.widget.RecyclerView>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button3mapa"
+            android:layout_width="138dp"
+            android:layout_height="57dp"
+            android:layout_gravity="right"
+            android:textColor="#F7FCF7F7"
+            android:background="@drawable/botnes2"
+            android:text="VER MAPA" />
+    </LinearLayout>
+
+
+</ScrollView>
